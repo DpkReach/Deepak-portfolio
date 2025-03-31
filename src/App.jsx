@@ -20,6 +20,7 @@ function App() {
   return (
     <Router>
       <Header />
+      <title>Deepak Adimoolam Portfolio</title>
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/projects" element={<Projects />} />
