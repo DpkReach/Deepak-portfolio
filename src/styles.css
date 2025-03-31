@@ -1,0 +1,221 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #ff4b5c;  /* Soft red color on hover */
+}
+
+.nav-button:focus {
+  outline: none;  /* Removes focus outline */
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #ff4b5c;
+}
+
+section {
+  padding: 20px;
+}
+
+h2 {
+ color : #33ccff;
+}
+
+ h3 {
+  color : #0066ff;
+}
+
+p {
+   color : #ff8080;
+}
+
+
+projects-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+#about {
+  display: flex;
+  justify-content: center;   /* Centers the content horizontally */
+  align-items: center;       /* Aligns items vertically in the center */
+  padding: 40px;
+  background-color: #f8f8f8;
+}
+
+.about-container {
+  display: flex;             /* Make container a flex container */
+  flex-direction: row;       /* Items will be aligned horizontally */
+  align-items: center;       /* Aligns the items vertically centered */
+  justify-content: space-between; /* Ensures spacing between the image and text */
+  max-width: 1000px;         /* Set a max width to control how wide the content gets */
+  width: 100%;
+}
+
+.image-container {
+  flex: 1;                   /* Allow the image container to take 1 part of the space */
+  display: flex;
+  justify-content: center;   /* Centers the image horizontally within its container */
+}
+
+
+.text-container {
+  flex: 2;
+  width: 100%;                  /* Allows the text container to take 2 parts of the space */
+  max-width: 600px;          /* Limits the width of the text */
+  display: flex;
+  flex-direction: column;    /* Stacks text elements vertically */
+  justify-content: center;   /* Centers the text vertically */
+  align-items: flex-start;
+  gap: 20px;   /* Aligns the text to the left */
+}
+
+.about-text {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.gitlink {
+  margin-top: 20px;          /* Adds space above the GitHub link */
+}
+
+.gitlink a {
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.gitlink a:hover {
+  color: #0044cc;
+}
+
+
+.view-details {
+  margin-top: 10px;
+  color: #007bff;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.view-details:hover {
+  text-decoration: underline;
+}
+
+.project-detail-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.about-image {
+  max-width: 250px; /* Reduce size */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.image-gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.back-to-projects {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.back-to-projects:hover {
+  background-color: #ff1e2a;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Adjust how image scales */
+}
+
+body, html {
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}

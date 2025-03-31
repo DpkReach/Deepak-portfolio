@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+
+
+.about-image {
+  max-width: 250px; /* Reduce size */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px; /* Rounded corners */
+}
+
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f8f8f8;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: #555;
+}
+}
