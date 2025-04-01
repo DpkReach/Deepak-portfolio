@@ -1,2 +1,2 @@
 # Deepak-portfolio
-This Project is to host a portfolio of mine
+This is a portfolio project setup using react and Vite to host my personal profile
