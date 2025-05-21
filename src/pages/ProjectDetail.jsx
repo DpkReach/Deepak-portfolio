@@ -21,7 +21,7 @@ import A11y_Image2 from '../assets/images/A11y_images/image2.png';
 import A11y_Image3 from '../assets/images/A11y_images/image3.png';
 import A11y_Image4 from '../assets/images/A11y_images/image4.png';
 import A11y_Image5 from '../assets/images/A11y_images/image5.png';
-import DV_Image1 from '../assets/images/DV_images/Image1.png';
+import DV_Image1 from '../assets/images/DV_images/image1.png';
 import DV_Image2 from '../assets/images/DV_images/image2.png';
 import DV_Image3 from '../assets/images/DV_images/image3.png';
 import DV_Image4 from '../assets/images/DV_images/image4.png';
