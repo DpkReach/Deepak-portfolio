@@ -1,33 +1,42 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaLinkedin, FaEnvelope } from 'react-icons/fa'; // Using React Icons for visual appeal
+import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
-// Styled Components
-const ContactContainer = styled.section`
-  padding: 50px;
-  background: #f9f9f9;
-  text-align: center;
-  width: 200vh;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 0 auto;
+const ContactWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f0f0; /* Match your global background */
+  position: relative;
 `;
 
-const ContactTitle = styled.h2`
+const ContactContainer = styled.div`
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+`;
+
+const Title = styled.h2`
   font-size: 2rem;
   color: #333;
+  margin-bottom: 10px;
 `;
 
-const ContactInfo = styled.p`
-  font-size: 1.2rem;
-  color: #555;
-  margin: 20px 0;
+const Info = styled.p`
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
 `;
 
-const ContactLink = styled.a`
-  text-decoration: none;
+const Link = styled.a`
   color: #0077b5;
+  text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 
@@ -36,42 +45,37 @@ const ContactLink = styled.a`
   }
 `;
 
-const IconContainer = styled.div`
-  font-size: 1.8rem;
-  color: #0077b5;
+const IconRow = styled.div`
   display: flex;
-  gap: 20px;
   justify-content: center;
+  gap: 25px;
+  font-size: 2rem;
   margin-top: 20px;
-  
+
   a {
-    transition: transform 0.3s;
-    
+    color: #0077b5;
+    transition: transform 0.2s;
+
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
   }
 `;
 
 function Contact() {
   return (
-    <ContactContainer id="contact">
-      <ContactTitle>Contact</ContactTitle>
-      <ContactInfo>Email: <ContactLink href="mailto:deepakadimoolam1412@gmail.com">deepakadimoolam1412@gmail.com</ContactLink></ContactInfo>
-      <ContactInfo>LinkedIn: <ContactLink href="https://www.linkedin.com/in/deepak-adimoolam/" target="_blank">LinkedIn</ContactLink></ContactInfo>
-      
-      {/* Icons for LinkedIn and Email */}
-      <IconContainer>
-        <ContactLink href="mailto:deepakadimoolam1412@gmail.com">
-          <FaEnvelope />
-        </ContactLink>
-        <ContactLink href="https://www.linkedin.com/in/deepak-adimoolam/" target="_blank">
-          <FaLinkedin />
-        </ContactLink>
-      </IconContainer>
-    </ContactContainer>
+    <ContactWrapper>
+      <ContactContainer id="contact">
+        <Title>Contact</Title>
+        <Info>Email: <Link href="mailto:deepakadimoolam1412@gmail.com">deepakadimoolam1412@gmail.com</Link></Info>
+        <Info>LinkedIn: <Link href="https://www.linkedin.com/in/deepak-adimoolam/" target="_blank" rel="noopener noreferrer">deepak-adimoolam</Link></Info>
+        <IconRow>
+          <Link href="mailto:deepakadimoolam1412@gmail.com"><FaEnvelope /></Link>
+          <Link href="https://www.linkedin.com/in/deepak-adimoolam/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></Link>
+        </IconRow>
+      </ContactContainer>
+    </ContactWrapper>
   );
 }
 
 export default Contact;
-

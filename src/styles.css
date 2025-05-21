@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f0f0f0;
 }
 
 header {
@@ -12,10 +13,12 @@ header {
   top: 0;
   z-index: 1000;
   padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 header h1 {
   margin: 0;
+  font-size: 1.8rem;
 }
 
 nav ul {
@@ -60,18 +63,95 @@ section {
   padding: 20px;
 }
 
-h2 {
- color : #33ccff;
+.project-detail-container {
+  background-color: #0c0b0e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 20px;  /* Remove auto and make it span the full width with padding */
+  width: 100%;   /* Set the width to 100% of the viewport */
+  height: 100vh; /* Set the height to the full viewport height */
+  box-sizing: border-box;  /* Ensures padding is included in width/height calculations */
 }
 
- h3 {
-  color : #0066ff;
+
+
+h2 {
+  color: #33ccff; /* Light blue color for the title */
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+h3 {
+  color: #0066ff; /* Slightly darker blue for sub-headings */
+  font-size: 1.5rem;
 }
 
 p {
-   color : #ff8080;
+  /*color: #ea8247; */
+  color: #cbe1e3;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+
+}
+/*text-align: center;*/
+
+.my_name{
+ font-size: 2.6rem;
+ margin-top: 10px
+ color:#33ccff;
 }
 
+.my_name:hover {
+  /*color: #ea8247;*/
+  color: #f9826c;
+}
+
+.my_name_1{
+ font-size: 1.6rem;
+ margin-top: 10px
+ color:#33ccff;
+}
+
+.my_name_1:hover {
+  /*color: #ea8247;*/
+  color: #f9826c;
+}
+
+.Find{
+margin-bottom: 1px;
+color:#33ccff;
+text-align: center;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+a:hover {
+  color: #0044cc;
+}
+
+.h3_project{
+font-size: 1.8rem;
+color:#67230c;
+justify-content: block;
+text-align:center;
+}
+
+.p_project{
+color:#03091d;
+text-align:center;
+}
 
 projects-container {
   text-align: center;
@@ -81,80 +161,41 @@ projects-container {
 .projects-grid {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 .project-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
+  background: #cbe1e3;
+  padding: 8px;
+  border-radius: 7px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  transition: transform 0.2s, border 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  border: 3px solid transparent; /* Invisible border initially */
+
 }
 
 .project-card:hover {
-  transform: scale(1.05);
+  transform: scale(0.9);
+  border: 2px solid #4CAF50; /* Highlight color */
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.4); /* Optional glow effect */
 }
 
-
-
-#about {
-  display: flex;
-  justify-content: center;   /* Centers the content horizontally */
-  align-items: center;       /* Aligns items vertically in the center */
-  padding: 40px;
-  background-color: #f8f8f8;
+#contact{
+    background: #cbe1e3;
+    padding: 8px;
+    border-radius: 7px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, border 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 3px solid transparent; /* Invisible border initially */
 }
 
-.about-container {
-  display: flex;             /* Make container a flex container */
-  flex-direction: row;       /* Items will be aligned horizontally */
-  align-items: center;       /* Aligns the items vertically centered */
-  justify-content: space-between; /* Ensures spacing between the image and text */
-  max-width: 1000px;         /* Set a max width to control how wide the content gets */
-  width: 100%;
+#contact:hover {
+  transform: scale(1.2);
+  border: 2px solid #4CAF50; /* Highlight color */
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.4); /* Optional glow effect */
 }
-
-.image-container {
-  flex: 1;                   /* Allow the image container to take 1 part of the space */
-  display: flex;
-  justify-content: center;   /* Centers the image horizontally within its container */
-}
-
-
-.text-container {
-  flex: 2;
-  width: 100%;                  /* Allows the text container to take 2 parts of the space */
-  max-width: 600px;          /* Limits the width of the text */
-  display: flex;
-  flex-direction: column;    /* Stacks text elements vertically */
-  justify-content: center;   /* Centers the text vertically */
-  align-items: flex-start;
-  gap: 20px;   /* Aligns the text to the left */
-}
-
-.about-text {
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-
-.gitlink {
-  margin-top: 20px;          /* Adds space above the GitHub link */
-}
-
-.gitlink a {
-  font-size: 1.2rem;
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.gitlink a:hover {
-  color: #0044cc;
-}
-
 
 .view-details {
   margin-top: 10px;
@@ -168,34 +209,55 @@ projects-container {
   text-decoration: underline;
 }
 
-.project-detail-container {
-  text-align: center;
-  padding: 40px;
-}
 
-.about-image {
-  max-width: 250px; /* Reduce size */
-  height: auto; /* Maintain aspect ratio */
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px; /* Rounded corners */
-}
-
+/* Image Gallery
 .image-gallery {
   display: flex;
   gap: 20px;
   justify-content: center;
+  margin-top: 20px;
 }
 
-.image-gallery img {
+/*.image-gallery img {
   width: 200px;
   height: 150px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+} */
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
+.image-gallery img {
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+.image-gallery img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Lightbox styles */
+.yet-another-react-lightbox {
+  z-index: 2000; /* Ensure the lightbox is always on top */
+}
+
+/* Back to Projects Button */
 .back-to-projects {
-  margin-top: 20px;
+  margin-top: 10px;
   display: inline-block;
   padding: 10px 20px;
   background-color: #ff4b5c;
@@ -203,10 +265,85 @@ projects-container {
   border: none;
   border-radius: 5px;
   text-decoration: none;
+  text-align: center;
 }
 
 .back-to-projects:hover {
   background-color: #ff1e2a;
+}
+
+.view-details {
+  margin-top: 10px;
+  color: #007bff;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.view-details:hover {
+  text-decoration: underline;
+}
+
+
+/* Layout of About Section */
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #f8f8f8;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.text-container {
+  flex: 2;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.gitlink a {
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.gitlink a:hover {
+  color: #0044cc;
 }
 
 img {

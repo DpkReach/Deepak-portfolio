@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { motion } from 'framer-motion';
 import styled from "styled-components";
 import Header from "./components/Header";
 import About from "./pages/About";
@@ -8,6 +9,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 import Contact from "./pages/Contact";
 import "./styles.css";
 import "./styles/About.css";
+
 
 const PageContainer = styled.div`
   padding-top: 80px; /* Prevents content from hiding behind fixed header */
@@ -30,6 +32,7 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;
 
