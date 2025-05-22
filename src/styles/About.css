@@ -1,14 +1,12 @@
 @media (max-width: 768px) {
 
-
 .about-image {
-  max-width: 250px; /* Reduce size */
+  max-width: 80px; /*change */
   height: auto; /* Maintain aspect ratio */
   display: block;
   margin: 0 auto;
   border-radius: 10px; /* Rounded corners */
 }
-
 
 #about {
   display: flex;
@@ -20,16 +18,18 @@
 
 .about-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  gap: 30px;
+  text-align: center;
+  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 
 .about-text {
-  max-width: 600px;
+  max-width: 100px;
+  padding: 0 10px;
 }
 
 .about-text h2 {

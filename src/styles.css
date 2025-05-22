@@ -64,6 +64,7 @@ section {
 }
 
 .project-detail-container {
+  position: relative;
   background-color: #0c0b0e;
   padding: 30px;
   border-radius: 10px;
@@ -355,4 +356,23 @@ img {
 
 body, html {
   overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.back-button {
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.back-button:hover {
+  background-color: #e63b4a;
 }

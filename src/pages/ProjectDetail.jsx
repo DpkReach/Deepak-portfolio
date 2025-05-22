@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 import { FaGithub } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 
 import Bigdata_Image1 from '../assets/images/BigData_images/Image1.png';
@@ -112,6 +113,10 @@ function ProjectDetail() {
 
   const [isOpen, setIsOpen] = useState(false); // For controlling the Lightbox visibility
   const [currentImageIndex, setCurrentImageIndex] = useState(0); // To track the current image index
+  const navigate = useNavigate();
+  const handleBack = () => {
+      navigate(-1); // This takes the user to the previous page
+    };
 
   if (!project) {
     return <p>Project not found</p>;
@@ -119,6 +124,9 @@ function ProjectDetail() {
 
   return (
     <div className="project-detail-container">
+    <button className="back-button" onClick={handleBack}>
+      ← Back
+    </button>
       <h2>{project.title}</h2>
       <p>{project.description}</p>
       {/*}<p>
