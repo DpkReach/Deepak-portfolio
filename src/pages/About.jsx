@@ -60,7 +60,7 @@ const SocialLinks = styled.div`
   flex-wrap: wrap;
 `;
 
-const text = `A passionate Software Professional with around 9 years of experience, having strong analytical skills
+const text = `A passionate Software Professional with around 10 years of experience, having strong analytical skills
               and an unyielding passion for coding. Having worked on a variety of projects I have cultivated
               an aptitude for quickly learning new technologies and collaborating with cross-functional teams.
               With a Master of Science (M.S) in Computer Science and AI from the University of North Texas,
